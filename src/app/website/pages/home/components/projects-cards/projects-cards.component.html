@@ -1,0 +1,21 @@
+<section class="pt-6 lg:py-16">
+    <p-carousel [value]="projects"  [numVisible]="2" [numScroll]="1" [responsiveOptions]="responsiveOptions"
+        [circular]="true">
+        <ng-template let-project pTemplate="item" let-i="index">
+            <div class="p-16 bg-secondary flex gap-5 me-10">
+                <a [routerLink]="project.link"
+                class="w-[95%] relative group text-primary-text cursor-pointer transition-all duration-700 ease-out min-h-[570px]">
+                <!-- Service Icon  -->
+                <img [src]="project.url" alt="" width="80" height="80"
+                    class="text-white w-full h-[300px] rounded-sm">
+
+                <!-- Project Heading   -->
+                <h1 class="text-[28px] font-medium text-white font-primary my-7">{{project.title}}</h1>
+                <!-- Project Details -->
+                <p class="text-base font-primary leading-7">{{project.desc}}</p>
+            </a>
+            </div>
+          
+        </ng-template>
+    </p-carousel>
+</section>

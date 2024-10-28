@@ -1,11 +1,11 @@
 <section class="bg-secondary ">
-    <div class="lg:h-[735px] container grid grid-cols-2 gap-20 py-20 font-primary relative">
+    <div class="lg:h-[735px] container grid lg:grid-cols-2 gap-20 py-20 font-primary relative">
         <!-- left Content  -->
         <div>
             <h1 class="text-[85px] font-bold text-white font-secondary leading-[8.2rem]">Hello! I'm <br> <span
                     class="text-[112px]">Toseef Dar</span> </h1>
-            <p class="text-lg my-12 text-primary-text lg:w-[50%] leading-7">UI/UX Designer specializing in Shopify &
-                Webflow.</p>
+            <p class="text-lg my-12 text-primary-text lg:w-[50%] leading-7">Frontend Developer & Website Designer with
+                expertise in Angular.</p>
 
             <!-- Hire Button  -->
             <button
@@ -25,8 +25,8 @@
 </section>
 
 <!-- My Services  -->
-<section id="my-services" class="bg-primary">
-    <div class="container py-10">
+<section class="bg-primary">
+    <div class="container py-20">
         <p class="text-lg text-primary-text lg:w-[50%] leading-7">|| Services</p>
         <h1 class="text-[70px] font-bold text-white font-secondary leading-[8.2rem] mt-6">Service Provide For My
             Clients.</h1>
@@ -36,4 +36,67 @@
         </ng-container>
     </div>
 
+</section>
+
+<!-- Special Skills Section  -->
+<section class="bg-secondary">
+    <div class="container py-20 grid lg:grid-cols-2 items-center gap-5 lg:gap-28">
+        <div class="">
+            <p class="text-lg text-primary-text lg:w-[50%] leading-7 flex items-center">|| Special Skills</p>
+            <h1 class="text-[70px] font-bold text-white font-secondary leading-[6.2rem] mt-6">My Special Skill Field
+                Here.</h1>
+            <!-- Hire Button  -->
+            <button
+                class="mt-20 flex items-center gap-5 border border-primary-border text-white rounded-[32px] h-16 text-lg px-10 hover:bg-secondary-bg hover:border-secondary-bg transition ease-in-out delay-100"><span>Hire
+                    Me</span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                    stroke="currentColor" class="size-5 text-white">
+                    <path strokeLinecap="round" strokeLinejoin="round"
+                        d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+                </svg>
+            </button>
+        </div>
+        <!-- Skill Cards  -->
+        <div class="font-primary text-lg flex flex-col gap-10">
+            <div class="bg-primary p-5 lg:p-12 text-primary-text ">
+                <div class="flex justify-between" [style.width.%]="communication">
+                    <h3 class="mb-5 tracking-[0.05]">Communication</h3>
+                    <p>{{communication+'%'}}</p>
+                </div>
+                <p-slider [(ngModel)]="communication" styleClass="w-14rem" />
+            </div>
+            <div class="bg-primary p-5 lg:p-12 text-primary-text ">
+                <div class="flex justify-between" [style.width.%]="leaderShip">
+                    <h3 class="mb-5 tracking-[0.05]">Leadership</h3>
+                    <p>{{leaderShip+'%'}}</p>
+                </div>
+                <p-slider [(ngModel)]="leaderShip" styleClass="w-14rem" />
+            </div>
+            <div class="bg-primary p-5 lg:p-12 text-primary-text ">
+                <div class="flex justify-between" [style.width.%]="teamWork">
+                    <h3 class="mb-5 tracking-[0.05]">Teamwork</h3>
+                    <p>{{teamWork+'%'}}</p>
+                </div>
+                <p-slider [(ngModel)]="teamWork" styleClass="w-14rem" />
+            </div>
+            <div class="bg-primary p-5 lg:p-12 text-primary-text ">
+                <div class="flex justify-between" [style.width.%]="flexibility">
+                    <h3 class="mb-5 tracking-[0.05]">Flexibility</h3>
+                    <p>{{flexibility+'%'}}</p>
+                </div>
+                <p-slider [(ngModel)]="flexibility" styleClass="w-14rem" />
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Projects Section  -->
+<section class="bg-primary">
+    <div class="container py-20">
+        <p class="text-lg text-primary-text lg:w-[50%] leading-7">|| <span class="mt-3">My Projects</span></p>
+        <h1 class="text-[70px] font-bold text-white font-secondary leading-[8.2rem]">My Complete Projects</h1>
+
+      <!-- Project Cards  -->
+       <project-cards></project-cards>
+    </div>
 </section>
