@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
@@ -10,7 +10,8 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [CommonModule, CarouselModule, ButtonModule, TagModule, NgOptimizedImage,RouterLink],
   templateUrl: './projects-cards.component.html',
-  styleUrl: './projects-cards.component.scss'
+  styleUrl: './projects-cards.component.scss',
+  encapsulation: ViewEncapsulation.Emulated 
 })
 export class ProjectsCardsComponent implements OnInit {
   responsiveOptions: any[] | undefined;
@@ -19,13 +20,13 @@ export class ProjectsCardsComponent implements OnInit {
       link:'/project-detail',
       url: 'images/project-images/ssbci.png',
       title: 'Banking Loan Website',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Voluptas vitae itaque at labore laborum eveniet porro deleniti, quaerat adipisci quibusdam, veniam quae voluptatem alias cum? Consecteturexercitationem voluptatem sapiente alias?'
+      desc: 'A dynamic banking loan application platform with role-based dashboards, built in Angular for seamless loan management and processing.'
     },
     {
       link:'/project-detail',
       url: 'images/project-images/number-plate-project.png',
       title: 'Online Vehicle Number Plates Cutomization Website',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Voluptas vitae itaque at labore laborum eveniet porro deleniti, quaerat adipisci quibusdam, veniam quae voluptatem alias cum? Consecteturexercitationem voluptatem sapiente alias?'
+      desc: 'An interactive platform for designing and ordering custom vehicle number plates online, with options for personalized styles, colors, and sizes.'
     }
   ]
   ngOnInit() {

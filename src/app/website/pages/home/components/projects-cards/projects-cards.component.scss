@@ -1,0 +1,59 @@
+::ng-deep {
+    .p-carousel {
+        position: relative;
+    }
+
+    .p-carousel-prev {
+        color: #858792;
+        background-color: transparent;
+        position: absolute;
+        top: -31% !important;
+        left: 85% !important;
+        width: 85px !important;
+        height: 85px !important;
+        border: 1px solid #3b3d49;
+
+        &:hover {
+            background-color: white !important;
+            color: #242734;
+            border: 1px solid #2A2D3A;
+        }
+    }
+
+    .p-carousel-next {
+        color: #858792;
+        background-color: transparent;
+        position: absolute;
+        top: -31% !important;
+        right: 1.5% !important;
+        border: 1px solid #3b3d49;
+        width: 85px;
+        height: 85px;
+
+        &:hover {
+            background-color: white !important;
+            color: #242734;
+            border: 1px solid #2A2D3A;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    ::ng-deep {
+        .p-carousel-prev {
+            color: #858792;
+            position: absolute;
+            top: 100%;
+            left: 47%;
+            width: 32px;
+            height: 32px;
+        }
+
+        .p-carousel-next {
+            color: #858792;
+            position: absolute;
+            top: 100%;
+            right: 47%;
+        }
+    }
+}
