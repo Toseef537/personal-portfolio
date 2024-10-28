@@ -1,0 +1,25 @@
+<section class="pt-6 lg:py-16">
+    <p-carousel [value]="services" [numVisible]="3" [numScroll]="1" [responsiveOptions]="responsiveOptions"
+        [circular]="true">
+        <ng-template let-product pTemplate="item" let-i="index">
+            <button (click)="focus(product.type)"
+                class="w-[95%] relative group p-16 rounded-lg bg-secondary text-primary-text cursor-pointer transition-all duration-700 ease-out min-h-[570px]"
+                [ngClass]="{'focus': product.type ===cardIdentity}">
+                <!-- Service Icon  -->
+                 <img [ngSrc]="'services-icons/'+product.icon" alt="" width="80" height="80" class="text-white w-20 h-auto mb-10 invert">
+                <!-- Service Title  -->
+                <h1 class="text-start font-primary text-[28px] font-medium my-10 text-white" >{{product.title}}</h1>
+
+                <!-- Skills  -->
+                <ul *ngFor="let skill of product.skills">
+                    <li class="flex gap-10 items-center text-lg my-5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                            stroke="currentColor" class="size-5">
+                            <path strokeLinecap="round" strokeLinejoin="round"
+                                d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+                        </svg>
+                        {{skill}}</li>
+                </ul>
+            </button>
+        </ng-template>
+    </p-carousel>
+</section>

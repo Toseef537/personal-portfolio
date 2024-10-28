@@ -11,7 +11,8 @@ module.exports = {
         "secondary-bg":"#2e303d"
       },
       fontFamily:{
-        primary:'Poppins, sans-serif'
+        primary:'Poppins, sans-serif',
+        secondary:'"Cormorant Garamond", serif'
       },
       container: {
         center: true,
