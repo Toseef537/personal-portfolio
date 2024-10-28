@@ -1,17 +1,23 @@
-<section class="bg-secondary sticky top-0">
-    <div class="h-28 p-5 flex justify-between items-center font-primary  container">
+<section class="bg-secondary sticky top-0 z-50">
+    <div class="h-28 flex justify-between items-center font-primary  container">
         <!-- Logo  -->
-         <img src="../../../../assets/logos/main-logo.png" alt="website-logo" class="w-20 h-5">
-        
-         <!-- Navigation List -->
-          <ul class="text-primary-text flex gap-20 text-lg ">
+        <img ngSrc="images/logos/main-logo.png" alt="website-logo" width="80" height="20" class="w-32 h-16">
+
+        <!-- Navigation List -->
+        <ul class="text-primary-text flex gap-20 text-lg ">
             <li class="navigation-item">Home</li>
             <li class="navigation-item">Services</li>
             <li class="navigation-item">About</li>
             <li class="navigation-item">Contact Us</li>
-          </ul>
-        
-          <!-- Hire Button  -->
-           <button class="border border-primary-border text-white rounded-[32px] h-16 text-lg px-10 hover:bg-secondary-bg hover:border-secondary-bg transition ease-in-out delay-100">Hire Me</button>
-        </div>
+        </ul>
+
+        <!-- Hire Button  -->
+        <button
+            class="flex items-center gap-5 border border-primary-border text-white rounded-[32px] h-16 text-lg px-10 hover:bg-secondary-bg hover:border-secondary-bg transition ease-in-out delay-100"><span>Hire
+                Me</span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                stroke="currentColor" class="size-5 text-white">
+                <path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+            </svg>
+        </button>
+    </div>
 </section>

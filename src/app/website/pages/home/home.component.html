@@ -1,3 +1,39 @@
 <section class="bg-secondary ">
-    <div class="h-screen container"></div>
+    <div class="lg:h-[735px] container grid grid-cols-2 gap-20 py-20 font-primary relative">
+        <!-- left Content  -->
+        <div>
+            <h1 class="text-[85px] font-bold text-white font-secondary leading-[8.2rem]">Hello! I'm <br> <span
+                    class="text-[112px]">Toseef Dar</span> </h1>
+            <p class="text-lg my-12 text-primary-text lg:w-[50%] leading-7">UI/UX Designer specializing in Shopify &
+                Webflow.</p>
+
+            <!-- Hire Button  -->
+            <button
+                class="flex items-center gap-5 border border-primary-border text-white rounded-[32px] h-16 text-lg px-10 hover:bg-secondary-bg hover:border-secondary-bg transition ease-in-out delay-100"><span>Hire
+                    Me</span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                    stroke="currentColor" class="size-5 text-white">
+                    <path strokeLinecap="round" strokeLinejoin="round"
+                        d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+                </svg>
+            </button>
+        </div>
+        <!-- Right Side Image  -->
+        <img ngSrc="images/hero-image.png" alt="hero-section-image"
+            class="absolute bottom-0 right-0 lg:h-[700px] w-auto" height="735" width="100">
+
+    </div>
+</section>
+
+<!-- My Services  -->
+<section id="my-services" class="bg-primary">
+    <div class="container py-10">
+        <p class="text-lg text-primary-text lg:w-[50%] leading-7">|| Services</p>
+        <h1 class="text-[70px] font-bold text-white font-secondary leading-[8.2rem] mt-6">Service Provide For My
+            Clients.</h1>
+
+        <ng-container>
+            <services-cards></services-cards>
+        </ng-container>
+    </div>
+
 </section>
