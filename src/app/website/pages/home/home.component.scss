@@ -1,0 +1,12 @@
+::ng-deep{
+    .p-slider {
+        background: rgba(255, 255, 255, .1);
+         .p-slider-range {
+            background: white;
+        }
+
+        .p-slider-handle {
+            display: none;
+        }
+    }
+}

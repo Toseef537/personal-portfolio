@@ -3,8 +3,8 @@
         [circular]="true">
         <ng-template let-product pTemplate="item" let-i="index">
             <button (click)="focus(product.type)"
-                class="w-[95%] relative group p-16 rounded-lg bg-secondary text-primary-text cursor-pointer transition-all duration-700 ease-out min-h-[570px]"
-                [ngClass]="{'focus': product.type ===cardIdentity}">
+                class="w-[95%] relative group p-16 bg-secondary text-primary-text cursor-pointer transition-all duration-700 ease-out min-h-[570px]"
+               >
                 <!-- Service Icon  -->
                  <img [ngSrc]="'services-icons/'+product.icon" alt="" width="80" height="80" class="text-white w-20 h-auto mb-10 invert">
                 <!-- Service Title  -->
