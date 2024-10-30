@@ -38,22 +38,22 @@
     }
 }
 
-@media (min-width: 768px) {
-    ::ng-deep {
-        .p-carousel-prev {
-            color: #858792;
-            position: absolute;
-            top: 100%;
-            left: 47%;
-            width: 32px;
-            height: 32px;
-        }
+// @media (min-width: 768px) {
+//     ::ng-deep {
+//         .p-carousel-prev {
+//             color: #858792;
+//             position: absolute;
+//             top: 100%;
+//             left: 47%;
+//             width: 32px;
+//             height: 32px;
+//         }
 
-        .p-carousel-next {
-            color: #858792;
-            position: absolute;
-            top: 100%;
-            right: 47%;
-        }
-    }
-}
+//         .p-carousel-next {
+//             color: #858792;
+//             position: absolute;
+//             top: 100%;
+//             right: 47%;
+//         }
+//     }
+// }

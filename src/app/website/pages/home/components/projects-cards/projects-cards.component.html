@@ -2,12 +2,12 @@
     <p-carousel [value]="projects"  [numVisible]="2" [numScroll]="1" [responsiveOptions]="responsiveOptions"
         [circular]="true">
         <ng-template let-project pTemplate="item" let-i="index">
-            <div class="p-16 bg-secondary me-10">
+            <div class="p-7 lg:p-16 bg-secondary lg:me-10 lg:min-h-[630px]">
                 <a [routerLink]="project.link"
-                class="relative group text-primary-text cursor-pointer transition-all duration-700 ease-out min-h-[530px]">
+                class="relative group text-primary-text cursor-pointer transition-all duration-700 ease-out ">
                 <!-- Service Icon  -->
                 <img [src]="project.url" alt="" width="80" height="80"
-                    class="text-white w-full h-[300px] rounded-sm">
+                    class="text-white w-full h-48 lg:h-[300px] rounded-sm">
 
                 <!-- Project Heading   -->
                 <h1 class="text-[28px] font-medium text-white font-primary my-7">{{project.title}}</h1>

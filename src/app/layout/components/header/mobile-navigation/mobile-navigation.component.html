@@ -1,0 +1,34 @@
+<div class="fixed inset-y-0 left-0 w-3/4 bg-secondary transform transition-transform duration-1000 ease-in-out"
+    [class.-translate-x-full]="!isMenuOpen" [class.translate-x-0]="isMenuOpen">
+
+    <!-- Close button (right arrow) -->
+    <button class="lg:hidden p-2 text-white bg-primary rounded-full absolute top-10 -right-4" (click)="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+    </button>
+
+    <!-- Logo -->
+    <div class="p-5" routerLink="/home">
+        <img class="w-28 h-10 cursor-pointer" ngSrc="images/logos/main-logo.png" height="80" width="183"
+            alt="number-plate">
+    </div>
+    <div class="mb-8 border-t border-white opacity-50"></div>
+
+    <!-- Menu items -->
+    <div class="flex flex-col items-start p-8 ">
+        <ul class="text-white flex flex-col gap-6 text-base lg:text-lg ">
+            <li class="navigation-item"><a routerLink="/home">Home</a></li>
+            <li class="navigation-item"><a routerLink="/services">Services</a></li>
+            <li class="navigation-item"><a routerLink="/about">About</a> </li>
+            <li class="navigation-item"><a routerLink="/contact">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Terms and Privacy (at the bottom) -->
+    <!-- <div class="flex justify-start flex-col items-start text-base text-white p-8 gap-6 mt-auto">
+        <a class="cursor-pointer">Terms of Service</a>
+        <a class="cursor-pointer">Privacy Policy</a>
+    </div> -->
+</div>

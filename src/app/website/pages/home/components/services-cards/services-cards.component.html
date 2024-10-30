@@ -2,18 +2,18 @@
     <p-carousel [value]="services" [numVisible]="3" [numScroll]="1" [responsiveOptions]="responsiveOptions"
         [circular]="true">
         <ng-template let-service pTemplate="item" let-i="index">
-            <div class="mx-5">
+            <div class="lg:mx-5">
                 <button (click)="focus(service.type)"
-                class="w-full relative group p-16 bg-secondary text-primary-text cursor-pointer transition-all duration-700 ease-out min-h-[570px]"
+                class="w-full relative group p-11 lg:p-16 bg-secondary text-primary-text cursor-pointer transition-all duration-700 ease-out min-h-[530px] lg:min-h-[570px]"
                >
                 <!-- Service Icon  -->
-                 <img [ngSrc]="'services-icons/'+service.icon" alt="" width="80" height="80" class="text-white w-20 h-auto mb-10 invert">
+                 <img [ngSrc]="'services-icons/'+service.icon" alt="" width="80" height="80" class="text-white w-14 lg:w-20 h-auto mb-5 lg:mb-10 invert">
                 <!-- Service Title  -->
                 <h1 class="text-start font-primary text-[28px] font-medium my-10 text-white" >{{service.title}}</h1>
 
                 <!-- Skills  -->
                 <ul *ngFor="let skill of service.skills">
-                    <li class="flex gap-10 items-center text-lg my-5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                    <li class="flex gap-10 items-center text-base lg:text-lg my-5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                             stroke="currentColor" class="size-5">
                             <path strokeLinecap="round" strokeLinejoin="round"
                                 d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
