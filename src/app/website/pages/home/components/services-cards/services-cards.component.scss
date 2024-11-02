@@ -36,29 +36,24 @@
             border: 1px solid #2A2D3A;
         }
     }
+    @media (max-width: 768px) {
+        .p-carousel-prev {
+            top: 10% !important;
+            left: 47% !important;
+            width: 45px !important;
+            height: 45px !important;
+        }
+    
+        .p-carousel-next {
+            top: 10% !important;
+            right: 47% !important;
+            width: 45px !important;
+            height: 45px !important;
+        }
+    }
 }
 
-// @media (min-width: 768px) {
-//     ::ng-deep {
-//         .p-carousel-prev {
-//             color: #858792;
-//             position: absolute;
-//             top: 100%;
-//             left: 47%;
-//             width: 45px !important;
-//             height: 45px !important;
-//         }
 
-//         .p-carousel-next {
-//             color: #858792;
-//             position: absolute;
-//             top: 100%;
-//             right: 47%;
-//             width: 45px !important;
-//             height: 45px !important;
-//         }
-//     }
-// }
 
 
   
