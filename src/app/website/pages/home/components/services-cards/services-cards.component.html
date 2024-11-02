@@ -4,7 +4,7 @@
         <ng-template let-service pTemplate="item" let-i="index">
             <div class="lg:mx-5">
                 <button (click)="focus(service.type)"
-                class="w-full relative group p-11 lg:p-16 bg-secondary text-primary-text cursor-pointer transition-all duration-700 ease-out min-h-[530px] lg:min-h-[570px]"
+                class="w-full group p-11 lg:p-16 bg-secondary text-primary-text cursor-pointer transition-all duration-700 ease-out min-h-[530px] lg:min-h-[570px]"
                >
                 <!-- Service Icon  -->
                  <img [ngSrc]="'services-icons/'+service.icon" alt="" width="80" height="80" class="text-white w-14 lg:w-20 h-auto mb-5 lg:mb-10 invert">
