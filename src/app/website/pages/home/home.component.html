@@ -1,14 +1,8 @@
 <section class="bg-secondary ">
-    <div class="lg:h-[735px] container lg:grid lg:grid-cols-2 gap-20 pb-10 lg:py-20 font-primary relative">
-
-        <!-- Mobile Image  -->
-        <div class="flex justify-center mb-5">
-            <img ngSrc="images/hero-image.png" alt="hero-section-image" class="block lg:hidden h-[342px] w-[340px]"
-                height="735" width="100">
-        </div>
+    <div class="lg:h-[735px] container grid lg:grid-cols-2 gap-10 lg:gap-20 py-10 lg:py-20 font-primary relative">
 
         <!-- left Content  -->
-        <div>
+        <div class="order-2 lg:order-1">
             <h1 class="text-4xl lg:text-[85px] font-bold text-white font-secondary leading-[4rem] lg:leading-[8.2rem]">
                 Hello! I'm <br> <span class="text-6xl lg:text-[112px]">Toseef Dar</span> </h1>
             <p class="text-base lg:text-lg my-8 lg:my-12 text-primary-text lg:w-[50%] leading-7">Frontend Developer &
@@ -16,20 +10,15 @@
                 expertise in Angular.</p>
 
             <!-- Hire Button  -->
-            <button
-                class="flex items-center gap-5 border border-primary-border text-white rounded-[42.5px] lg:rounded-[32px] h-[60px] lg:h-16 text-sm lg:text-lg px-10 hover:bg-secondary-bg hover:border-secondary-bg transition ease-in-out delay-100"><span>Hire
-                    Me</span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-                    stroke="currentColor" class="size-5 text-white">
-                    <path strokeLinecap="round" strokeLinejoin="round"
-                        d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
-                </svg>
-            </button>
+           <primary-button></primary-button>
         </div>
 
-        <!-- Desktop Image  -->
-        <img ngSrc="images/hero-image.png" alt="hero-section-image"
-            class="hidden lg:block absolute bottom-0 right-0 lg:h-[700px] w-auto" height="735" width="100">
-
+        <!-- Hero Section Image  -->
+         <div class="order-1 lg:order-2 lg:absolute bottom-0 right-0 ">
+            <div class="rounded-full lg:h-[700px] absolute"></div>
+            <img ngSrc="images/hero-image.png" alt="hero-section-image"
+            class="lg:h-[700px] w-auto" height="735" width="100">
+         </div>
     </div>
 </section>
 
@@ -58,14 +47,7 @@
                 My Special Skill Field
                 Here.</h1>
             <!-- Hire Button  -->
-            <button
-                class="my-10 lg:mt-20 flex items-center gap-5 border border-primary-border text-white rounded-[32px] h-16 text-lg px-10 hover:bg-secondary-bg hover:border-secondary-bg transition ease-in-out delay-100"><span>Hire
-                    Me</span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-                    stroke="currentColor" class="size-5 text-white">
-                    <path strokeLinecap="round" strokeLinejoin="round"
-                        d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
-                </svg>
-            </button>
+            <primary-button></primary-button>
         </div>
         <!-- Skill Cards  -->
         <div class="font-primary text-lg flex flex-col gap-10">

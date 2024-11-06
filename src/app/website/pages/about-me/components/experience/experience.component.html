@@ -1,0 +1,28 @@
+<div class=" text-white flex justify-center">
+    <div class="flex w-full">
+        <!-- Timeline Sidebar for Years with Borders -->
+        <div class="w-1/4 relative border border-whiteTransparent grid grid-rows-2 gap-y-24 pt-20">
+            @for (years of timelineYears; track $index) {
+            <!-- Each Year Entry with Right Border -->
+            <div class="flex relative justify-end">
+                <div class="h-16 w-px bg-white absolute right-0"></div>
+                <p class="text-gray-400 pr-10 mt-4">{{years}}</p>
+            </div>
+            }
+
+        </div>
+
+        <!-- Main Content with Education Details -->
+        <div class="w-3/4 pl-24 grid grid-rows-2 gap-y-24 py-10 font-primary text-base text-primary-text">
+            @for (detail of experienceDetails; track $index) {
+            <div>
+                <h3 class="text-4xl font-secondary text-white">{{detail.title}}</h3>
+                <p class="my-6">{{detail.institution}}</p>
+                <p class="leading-relaxed w-4/5">
+                    {{detail.description}}
+                </p>
+            </div>
+            }
+        </div>
+    </div>
+</div>

@@ -8,7 +8,8 @@ module.exports = {
         secondary:"#242734",
         "primary-text":"#858792",
         "primary-border":"#3b3d49",
-        "secondary-bg":"#2e303d"
+        "secondary-bg":"#2e303d",
+        whiteTransparent: 'rgba(255, 255, 255, 0.1)',
       },
       fontFamily:{
         primary:'Poppins, sans-serif',

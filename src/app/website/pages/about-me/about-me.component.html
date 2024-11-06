@@ -1,0 +1,42 @@
+<section id="contact-me" class="bg-secondary">
+    <!-- Hero Section  -->
+    <hero-section [title]="'About Me'" [subTitle]="'About'"></hero-section>
+
+    <!-- About Me  -->
+    <section class="bg-primary ">
+        <div class="order-2 lg:order-1 py-20 text-center flex flex-col justify-center items-center  container">
+            <h1 class="text-4xl lg:text-[85px] font-bold text-white font-secondary leading-[4rem] lg:leading-[8.2rem]">
+                Hello! I'm Toseef Dar</h1>
+            <p class="text-center text-2xl font-secondary lg:text-5xl my-10 text-primary-text leading-[7rem]">Frontend
+                Developer &
+                Website Designer <br> with
+                expertise in Angular.</p>
+            <!-- My Summary  -->
+            <p class="text-lg text-primary-text lg:w-[50%] leading-7 mb-5">Front-End Developer with 2.5 years of
+                experience building responsive, user-centric web applications.
+                Proven expertise in Angular, optimizing performance, integrating third-party APIs, and creating
+                intuitive UIs. Skilled in modern frameworks like Tailwind CSS and Angular Material, with a focus on
+                delivering high-quality solutions and collaborating effectively with cross-functional teams.</p>
+
+            <!-- Hire Button  -->
+            <primary-button></primary-button>
+
+        </div>
+    </section>
+
+    <!-- Eductaion and Experience  -->
+    <Section class="container pt-20">
+        <div class="grid grid-cols-2 gap-5 text-[58px] text-white font-secondary">
+            <a routerLink="education" routerLinkActive="on-active"
+                class="border border-whiteTransparent py-2 px-4 text-center">Education</a>
+            <a routerLink="experience" routerLinkActive="on-active"
+                class="border border-whiteTransparent py-2 px-4 text-center">Experience</a>
+        </div>
+        <!-- Router Outlet  -->
+        <div class="py-24">
+            <router-outlet></router-outlet>
+        </div>
+
+    </Section>
+
+</section>

@@ -1,46 +1,37 @@
-<section class="bg-secondary sticky inset-0 z-50">
-        <div class="h-28 flex justify-between items-center font-primary container border-b border-b-gray-700 lg:border-none">
+<section class="bg-secondary sticky top-0 z-50 bordr-b border-b-primary-border">
+    <div class="h-24 lg:h-28 flex justify-between items-center font-primary container">
 
-            <!-- Logo  -->
-            <img ngSrc="images/logos/main-logo.png" alt="website-logo" width="80" height="20" class="w-32 h-16">
+        <!-- Logo  -->
+        <img ngSrc="images/logos/main-logo.png" alt="website-logo" width="80" height="20" class="w-32 h-16">
 
-            <!-- Hamburger Icon for Mobile -->
-            <button class="block lg:hidden text-white" (click)="toggleMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-7 h-7 text-white">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-            </button>
+        <!-- Hamburger Icon for Mobile -->
+        <button class="block lg:hidden text-white" (click)="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-10 h-10 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
 
 
-            <!-- Navigation List -->
-            <nav class="hidden lg:block">
-                <ul class="text-primary-text flex gap-20 text-lg">
-                    <li class="navigation-item"><a routerLink="/home">Home</a></li>
-                    <li class="navigation-item"><a routerLink="/services">Services</a></li>
-                    <li class="navigation-item"><a routerLink="/about">About</a> </li>
-                    <li class="navigation-item"><a routerLink="/contact">Contact Us</a></li>
-                </ul>
-            </nav>
+        <!-- Navigation List -->
+        <nav class="hidden lg:block">
+            <ul class="text-primary-text flex gap-20 text-lg">
+                @for (item of navigation; track $index) {
+                <li><a [routerLink]="item.link" routerLinkActive="active">{{item.label}}</a></li>
+                }
+            </ul>
+        </nav>
 
-            <!-- Hire Button  -->
-            <div class="hidden lg:block">
-                <button
-                    class="flex items-center gap-5 border border-primary-border text-white rounded-[32px] h-16 text-lg px-10 hover:bg-secondary-bg hover:border-secondary-bg transition ease-in-out delay-100"><span>Hire
-                        Me</span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        strokeWidth={1.5} stroke="currentColor" class="size-5 text-white">
-                        <path strokeLinecap="round" strokeLinejoin="round"
-                            d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
-                    </svg>
-                </button>
-            </div>
-
+        <!-- Hire Button  -->
+        <div class="hidden lg:block">
+            <primary-button></primary-button>
         </div>
+
+    </div>
 
     <!-- Mobile Menu (hidden by default) -->
     <div class="block lg:hidden">
-        <mobile-navigation [isMenuOpen]="isMenuOpen" (menuToggle)="toggleMenu()">
+        <mobile-navigation [isMenuOpen]="isMenuOpen" [navigation]="navigation" (menuToggle)="toggleMenu()">
         </mobile-navigation>
     </div>
 </section>

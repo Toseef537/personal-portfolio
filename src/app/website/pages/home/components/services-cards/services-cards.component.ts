@@ -3,6 +3,8 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
+import { services } from '../../../../../../data';
+import { IService } from '../../../../../common/interfaces/website.interface';
 @Component({
   selector: 'services-cards',
   standalone: true,
@@ -13,38 +15,7 @@ import { TagModule } from 'primeng/tag';
 export class ServicesCardsComponent {
   responsiveOptions: any[] | undefined;
   cardIdentity: string = 'Depth';
-  services: any[] = [
-    {
-      icon: 'development.png',
-      title: 'Front-End Development',
-      skills: ['HTML/CSS', 'JavaScript', 'Angular', 'TypeScript', 'Tailwind CSS']
-    },
-    {
-      icon: 'backend.png',
-      title: 'Backend Development',
-      skills: ['Nodejs', 'Express', 'Mongodb', 'TypeScript','Mongoose']
-    },
-    {
-      icon: 'designer.png',
-      title: 'Web Designing',
-      skills: ['CSS', 'Tailwind CSS', 'Bootstrap', 'Angular Material', 'PrimeNG']
-    },
-    {
-      icon: 'development.png',
-      title: 'Front-End Development',
-      skills: ['HTML/CSS', 'JavaScript', 'Angular', 'TypeScript', 'Tailwind CSS']
-    },
-    {
-      icon: 'backend.png',
-      title: 'Backend Development',
-      skills: ['Nodejs', 'Express', 'Mongodb', 'TypeScript','Mongoose']
-    },
-    {
-      icon: 'designer.png',
-      title: 'Web Designing',
-      skills: ['CSS', 'Tailwind CSS', 'Bootstrap', 'Angular Material', 'PrimeNG']
-    }
-  ];
+  services: IService[] = services
 
   constructor() { }
 
