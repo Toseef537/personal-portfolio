@@ -6,3 +6,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+// Routerlink Active Style 
+.active{
+    @apply text-white;
+}

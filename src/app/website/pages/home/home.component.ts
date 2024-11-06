@@ -4,10 +4,11 @@ import { ServicesCardsComponent } from './components/services-cards/services-car
 import { SliderModule } from 'primeng/slider';
 import { FormsModule } from '@angular/forms';
 import { ProjectsCardsComponent } from './components/projects-cards/projects-cards.component';
+import { PrimaryButtonComponent } from '../../../common/components/primary-button/primary-button.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NgOptimizedImage,ServicesCardsComponent,SliderModule,FormsModule,ProjectsCardsComponent],
+  imports: [NgOptimizedImage,ServicesCardsComponent,SliderModule,FormsModule,ProjectsCardsComponent,PrimaryButtonComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
