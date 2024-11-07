@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: #2A2D3A;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,8 +12,8 @@
   }
   
   .spinner {
-    border: 4px solid rgba(255, 255, 255, 0.3);
-    border-top: 4px solid white;
+    border: 4px solid #242734;
+    border-top: 4px solid #858792;
     border-radius: 50%;
     width: 40px;
     height: 40px;

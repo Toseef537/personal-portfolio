@@ -1,15 +1,15 @@
-<div class="fixed inset-y-0 left-0 w-3/4 bg-secondary transform transition-transform duration-1000 ease-in-out border-r border-r-gray-600"
+<div class="fixed inset-y-0 left-0 w-3/4 bg-secondary transform transition-transform duration-1000 ease-in-out border-r border-r-gray-600 py-10"
     [class.-translate-x-full]="!isMenuOpen" [class.translate-x-0]="isMenuOpen">
 
     <!-- Close button (right arrow) -->
     <button
-        class=" text-white bg-primary rounded-[100%] absolute top-4 right-4 w-8 h-8 flex justify-center items-center"
+        class=" text-white absolute top-4 right-4  flex justify-center items-center"
         (click)="toggleMenu()">
-        <i class="bi bi-x"></i>
+        <i class="bi bi-x text-3xl"></i>
     </button>
 
     <!-- Logo -->
-    <div class="p-5" routerLink="/home">
+    <div class="p-5 mb-2" routerLink="/home">
         <img class="w-40 h-auto cursor-pointer" ngSrc="images/logos/main-logo.png" height="80" width="183"
             alt="number-plate">
     </div>
