@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeroSectionComponent } from '../../../common/hero-section/hero-section.component';
+import { HeroSectionComponent } from '../../../common/components/hero-section/hero-section.component';
 import { PrimaryButtonComponent } from '../../../common/components/primary-button/primary-button.component';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 

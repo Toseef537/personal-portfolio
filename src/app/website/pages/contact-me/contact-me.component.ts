@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { HeroSectionComponent } from '../../../common/hero-section/hero-section.component';
+import { HeroSectionComponent } from '../../../common/components/hero-section/hero-section.component';
 
 @Component({
   selector: 'contact-me',

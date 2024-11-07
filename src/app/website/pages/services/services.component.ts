@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeroSectionComponent } from '../../../common/hero-section/hero-section.component';
+import { HeroSectionComponent } from '../../../common/components/hero-section/hero-section.component';
 import { ServiceCardComponent } from './service-card/service-card.component';
 
 @Component({
