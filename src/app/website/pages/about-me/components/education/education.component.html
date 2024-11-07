@@ -35,7 +35,7 @@
     <div class="lg:hidden">
 
         <!-- Dates  -->
-        <div class="relative border border-whiteTransparent py-7">
+        <div class="relative border border-whiteTransparent py-5">
             @for (years of timelineYears.slice(0,-1); track $index) {
             <div class="flex items-center relative lg:justify-end">
                 <div class="h-16 w-px bg-white absolute right-0"></div>
@@ -59,7 +59,7 @@
 
             <!-- Date For Mobile Screen  -->
             <div class="relative border border-whiteTransparent my-10">
-                <div class="flex items-center relative lg:justify-end lg:hidden py-7">
+                <div class="flex items-center relative lg:justify-end lg:hidden py-5">
                     <div class="h-16 w-px bg-white absolute right-0"></div>
                     <p class="text-gray-400 pr-10 pl-5 lg:pl-0">{{timelineYears[timelineYears.length-1]}}</p>
                 </div>

@@ -1,18 +1,18 @@
 <section class="pt-6 lg:py-16 grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10">
         @for (service of services; track $index) {
-        <div class="min-h-[530px] lg:min-h-[570px]">
+        <div class="h-auto lg:min-h-[570px]">
             <button
-                class="w-full group p-11 lg:p-16 bg-secondary text-primary-text cursor-pointer transition-all duration-700 ease-out h-full">
+                class="w-full group px-7 py-10 lg:p-16 bg-secondary text-primary-text cursor-pointer transition-all duration-700 ease-out h-full">
                 <!-- Service Icon  -->
                 <img [ngSrc]="'services-icons/'+service.icon" alt="" width="80" height="80"
                     class="text-white w-14 lg:w-20 h-auto mb-5 lg:mb-10 invert">
                 <!-- Service Title  -->
-                <h1 class="text-start font-primary text-[28px] font-medium my-10 text-white">{{service.title}}</h1>
+                <h1 class="text-start font-primary text-[28px] font-medium my-5 lg:my-10 text-white">{{service.title}}</h1>
 
                 <!-- Skills  -->
                 @for (skill of service.skills; track $index) {
                 <ul>
-                    <li class="flex gap-10 items-center text-base lg:text-lg my-5"><svg
+                    <li class="flex gap-10 items-center text-base lg:text-lg my-3 lg:my-5"><svg
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                             stroke="currentColor" class="size-5">
                             <path strokeLinecap="round" strokeLinejoin="round"

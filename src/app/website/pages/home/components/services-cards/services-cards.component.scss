@@ -1,6 +1,11 @@
 ::ng-deep {
+    .p-carousel .p-carousel-content {
+        touch-action: pan-y !important;
+    }
+
     .p-carousel {
         position: relative;
+        overscroll-behavior: contain !important;
     }
 
     .p-carousel-prev {
@@ -36,6 +41,7 @@
             border: 1px solid #2A2D3A;
         }
     }
+
     @media (max-width: 768px) {
         .p-carousel-prev {
             top: 10% !important;
@@ -43,7 +49,7 @@
             width: 45px !important;
             height: 45px !important;
         }
-    
+
         .p-carousel-next {
             top: 10% !important;
             right: 47% !important;
@@ -52,8 +58,3 @@
         }
     }
 }
-
-
-
-
-  

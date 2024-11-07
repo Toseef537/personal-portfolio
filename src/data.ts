@@ -47,21 +47,6 @@ export const services = [
         icon: 'designer.png',
         title: 'Web Designing',
         skills: ['CSS', 'Tailwind CSS', 'Bootstrap', 'Angular Material', 'PrimeNG']
-    },
-    {
-        icon: 'development.png',
-        title: 'Front-End Development',
-        skills: ['HTML/CSS', 'JavaScript', 'Angular', 'TypeScript', 'Tailwind CSS']
-    },
-    {
-        icon: 'backend.png',
-        title: 'Back-End Development',
-        skills: ['Nodejs', 'Express', 'Mongodb', 'TypeScript', 'Mongoose']
-    },
-    {
-        icon: 'designer.png',
-        title: 'Web Designing',
-        skills: ['CSS', 'Tailwind CSS', 'Bootstrap', 'Angular Material', 'PrimeNG']
     }
 ];
 

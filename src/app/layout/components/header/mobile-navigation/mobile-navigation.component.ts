@@ -8,8 +8,7 @@ import { navigationItems } from '../../../../../data';
   standalone: true,
   imports: [NgOptimizedImage,RouterLink,RouterLinkActive],
   templateUrl: './mobile-navigation.component.html',
-  styleUrl: './mobile-navigation.component.scss',
-  changeDetection:ChangeDetectionStrategy.OnPush
+  styleUrl: './mobile-navigation.component.scss'
 })
 export class MobileNavigationComponent {
   @Input() isMenuOpen: boolean = false;

@@ -10,7 +10,7 @@
 
     <!-- Logo -->
     <div class="p-5" routerLink="/home">
-        <img class="w-48 h-auto cursor-pointer" ngSrc="images/logos/main-logo.png" height="80" width="183"
+        <img class="w-40 h-auto cursor-pointer" ngSrc="images/logos/main-logo.png" height="80" width="183"
             alt="number-plate">
     </div>
     <div class="mb-8 border-t border-gray-600 opacity-50"></div>
@@ -20,7 +20,7 @@
     <nav>
         <ul class="text-primary-text flex flex-col gap-7 text-lg p-8">
             @for (item of navigation; track $index) {
-            <li><a [routerLink]="item.link" routerLinkActive="active">{{item.label}}</a></li>
+            <li (click)="toggleMenu()"><a [routerLink]="item.link" routerLinkActive="active">{{item.label}}</a></li>
             }
         </ul>
     </nav>

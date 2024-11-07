@@ -1,13 +1,13 @@
-<section class="bg-secondary sticky top-0 z-50 bordr-b border-b-primary-border">
-    <div class="h-24 lg:h-28 flex justify-between items-center font-primary container">
+<section class="bg-secondary sticky top-0 z-50">
+    <div class="h-24 lg:h-28 flex justify-between items-center font-primary container bordr-b border-b-primary-border">
 
         <!-- Logo  -->
-        <img ngSrc="images/logos/main-logo.png" alt="website-logo" width="80" height="20" class="w-48 h-auto">
+        <a routerLink="/home"><img ngSrc="images/logos/main-logo.png" alt="website-logo" width="80" height="20" class="w-40 lg:w-48 h-auto"></a>
 
         <!-- Hamburger Icon for Mobile -->
         <button class="block lg:hidden text-white" (click)="toggleMenu()">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-10 h-10 text-white">
+                stroke="currentColor" class="w-9 h-9 text-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
         </button>

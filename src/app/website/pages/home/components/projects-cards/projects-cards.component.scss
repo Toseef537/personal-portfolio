@@ -1,6 +1,10 @@
 ::ng-deep {
+    .p-carousel .p-carousel-content {
+        touch-action: pan-y !important;
+    }
     .p-carousel {
         position: relative;
+        overscroll-behavior: contain !important;
     }
 
     .p-carousel-prev {
