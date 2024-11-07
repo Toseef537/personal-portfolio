@@ -1,28 +1,79 @@
 <div class=" text-white flex justify-center">
-    <div class="flex w-full">
-        <!-- Timeline Sidebar for Years with Borders -->
-        <div class="w-1/4 relative border border-whiteTransparent grid grid-rows-2 gap-y-24 pt-20">
-            @for (years of timelineYears; track $index) {
-            <!-- Each Year Entry with Right Border -->
-            <div class="flex relative justify-end">
+    <div class="hidden lg:block">
+        <div class="grid grid-cols-1 lg:grid-cols-3">
+            <!-- Dates  -->
+            <div class="relative border border-whiteTransparent grid grid-rows-2 gap-y-10 lg:gap-y-24 py-10 lg:py-20">
+                @for (years of timelineYears; track $index) {
+                <!-- Each Year Entry with Right Border -->
+                <div class="flex items-center relative lg:justify-end">
+                    <div class="h-16 w-px bg-white absolute right-0"></div>
+                    <p class="text-gray-400 pr-10 pl-5 lg:pl-0">{{years}}</p>
+                </div>
+                }
+            </div>
+
+            <!-- Education Details  -->
+            <div
+                class="col-span-2 lg:pl-24 lg:grid grid-rows-2 gap-y-12 lg:gap-y-24 py-10 font-primary text-base text-primary-text">
+                @for (detail of experienceDetails; track $index) {
+                <div>
+                    <h3 class="text-4xl font-secondary text-white">{{detail.title}}</h3>
+                    <p class="my-6">{{detail.institution}}</p>
+                    <p class="leading-relaxed lg:w-4/5">
+                        {{detail.description}}
+                    </p>
+                </div>
+                }
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- For Mobile Screen  -->
+    <div class="lg:hidden">
+
+        <!-- Dates  -->
+        <div class="relative border border-whiteTransparent py-7">
+            @for (years of timelineYears.slice(0,-1); track $index) {
+            <div class="flex items-center relative lg:justify-end">
                 <div class="h-16 w-px bg-white absolute right-0"></div>
-                <p class="text-gray-400 pr-10 mt-4">{{years}}</p>
+                <p class="text-gray-400 pr-10 pl-5 lg:pl-0">{{years}}</p>
             </div>
             }
 
         </div>
 
-        <!-- Main Content with Education Details -->
-        <div class="w-3/4 pl-24 grid grid-rows-2 gap-y-24 py-10 font-primary text-base text-primary-text">
-            @for (detail of experienceDetails; track $index) {
+        <!-- Education Details  -->
+        <div class="py-10 font-primary text-base text-primary-text">
+            @for (detail of experienceDetails.slice(0,-1); track $index) {
             <div>
                 <h3 class="text-4xl font-secondary text-white">{{detail.title}}</h3>
                 <p class="my-6">{{detail.institution}}</p>
-                <p class="leading-relaxed w-4/5">
+                <p class="leading-relaxed lg:w-4/5">
                     {{detail.description}}
                 </p>
             </div>
             }
+
+            <!-- Date For Mobile Screen  -->
+            <div class="relative border border-whiteTransparent my-10">
+                <div class="flex items-center relative lg:justify-end lg:hidden py-7">
+                    <div class="h-16 w-px bg-white absolute right-0"></div>
+                    <p class="text-gray-400 pr-10 pl-5 lg:pl-0">{{timelineYears[timelineYears.length-1]}}</p>
+                </div>
+            </div>
+
+            <!-- Showing Last Array Element Seprately  -->
+            <div>
+                <h3 class="text-4xl font-secondary text-white">{{experienceDetails[experienceDetails.length-1].title}}
+                </h3>
+                <p class="my-6">{{experienceDetails[experienceDetails.length-1].institution}}</p>
+                <p class="leading-relaxed lg:w-4/5">
+                    {{experienceDetails[experienceDetails.length-1].description}}
+                </p>
+            </div>
         </div>
     </div>
 </div>

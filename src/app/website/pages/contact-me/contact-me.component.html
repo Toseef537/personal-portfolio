@@ -6,9 +6,9 @@
     <section class="bg-primary">
         <div class="container grid grid-cols-1 lg:grid-cols-3 lg:gap-10 py-10 lg:py-32">
             <!-- Contact Info  -->
-            <div class="bg-secondary">
+            <div class="bg-secondary order-2 lg:order-1">
                 <!-- Contact Details  -->
-                <div class="p-10 lg:p-14 flex flex-col gap-8 row-span-2">
+                <div class="p-7 lg:p-14 flex flex-col gap-8 row-span-2">
 
                     <!-- Phone Number  -->
                     <div class="bg-primary p-10 font-primary">
@@ -38,7 +38,7 @@
                 </div>
             </div>
             <!-- Contact Form  -->
-            <div class="container col-span-2">
+            <div class="container col-span-2 order-1 lg:order-2">
                 <div class="mb-10 lg:mb-20">
                     <p class="text-lg text-primary-text lg:w-[50%] leading-7 font-primary tracking-wide">|| Get in touch
                     </p>
@@ -46,7 +46,7 @@
                         class="text-4xl lg:text-[65px] font-bold text-white font-secondary leading-[3rem] lg:leading-[4.5rem] my-5 lg:my-8">
                         If you have any porject or need help. Contact me
                     </h1>
-                    <p class="text-lg text-primary-text  leading-7 font-primary tracking-wide">
+                    <p class="text-base lg:text-lg text-primary-text  leading-7 font-primary tracking-wide">
                         I’m here to discuss your ideas, offer advice, and help bring your projects to life. Fill out the
                         form below, and
                         I’ll get back to you as soon as possible.
@@ -57,25 +57,40 @@
                 <form (submit)="contactForm()">
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-7">
                         <!-- Name  -->
-                        <input type="text" name="name" class="py-5 px-7 border border-whiteTransparent bg-transparent"
-                            placeholder="Name">
+                        <div>
+                            <input type="text" name="name"
+                                class="py-5 px-7 border border-whiteTransparent bg-transparent w-full"
+                                placeholder="Name">
+                        </div>
                         <!-- Email  -->
-                        <input type="email" name="email" class="py-5 px-7 border border-whiteTransparent bg-transparent"
-                            placeholder="Email">
+                        <div>
+                            <input type="email" name="email"
+                                class="py-5 px-7 border border-whiteTransparent bg-transparent w-full"
+                                placeholder="Email">
+                        </div>
                         <!-- Phone  -->
-                        <input type="tel" name="phone" class="py-5 px-7 border border-whiteTransparent bg-transparent"
-                            placeholder="Phone">
+                        <div>
+                            <input type="tel" name="phone"
+                                class="py-5 px-7 border border-whiteTransparent bg-transparent w-full"
+                                placeholder="Phone">
+                        </div>
                         <!-- Subject  -->
-                        <input type="text" name="subject"
-                            class="py-5 px-7 border border-whiteTransparent bg-transparent" placeholder="Subject">
+                        <div>
+                            <input type="text" name="subject"
+                                class="py-5 px-7 border border-whiteTransparent bg-transparent w-full"
+                                placeholder="Subject">
+                        </div>
                         <!-- Comment  -->
-                        <textarea name="comment" name="comment" rows="4" cols="80" style="width: 100%;"
-                            class="col-span-2 py-5 px-7 border border-whiteTransparent bg-transparent"
-                            placeholder="Comment"></textarea>
+                        <div class="col-span-2 ">
+                            <textarea name="comment" name="comment" rows="4" cols="80"
+                                class="py-5 px-7 border border-whiteTransparent bg-transparent w-full"
+                                placeholder="Comment"></textarea>
+                        </div>
+
                     </div>
                     <!-- Submit Button  -->
                     <button type="submit"
-                        class="my-5 lg:my-10 flex items-center  border border-primary-border text-white rounded-[42.5px] lg:rounded-full h-[60px] lg:h-[70px] text-sm lg:text-lg px-14 hover:bg-secondary-bg hover:border-secondary-bg transition ease-in-out delay-100">
+                        class="my-5 lg:my-10 flex items-center  border border-primary-border text-white rounded-[42.5px] lg:rounded-full h-[60px] lg:h-[70px] text-sm lg:text-lg px-10 lg:px-14 hover:bg-secondary-bg hover:border-secondary-bg transition ease-in-out delay-100">
                         Submit Message
                     </button>
                 </form>
